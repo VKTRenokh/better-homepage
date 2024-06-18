@@ -6,7 +6,8 @@ const user = useUserStore()
 
 <template>
   <header>
-    <h1>Header {{ user.userName }}</h1>
+    <h1>Hello {{ user.userName }}</h1>
+    <input type="text" placeholder="Test" v-model.lazy="user.userName" />
   </header>
 </template>
 
